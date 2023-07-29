@@ -16,7 +16,7 @@ def saludar_con_fecha(request):
     respuesta_http = HttpResponse(saludo)
     return respuesta_http
 
-def saludar_con_html(request):
+def inicio(request):
     contexto = {}
     http_response = render(
         request=request,
@@ -28,3 +28,4 @@ def saludar_con_html(request):
 
 
 
+ 

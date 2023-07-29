@@ -1,12 +1,10 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Sistema Coder de la comision 55350</title>
-    <meta name="description" content="Our first page">
-    <meta name="keywords" content="html tutorial template">
-  </head>
-  <body>
-    
+{% extends "base.html" %}
+
+{% block titulo %}
+Lista de cursos
+{% endblock titulo %}
+
+{% block contenido %}    
     <h3> Cursos </h3>
 <ul>
 {% for curso in cursos %}
@@ -16,5 +14,5 @@
   </li> 
 {% endfor %}  
 </ul>
-  </body>
-</html>
+>
+{% endblock contenido %}

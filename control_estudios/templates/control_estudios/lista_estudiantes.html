@@ -1,14 +1,10 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Sistema Coder de la comision 55350</title>
-    <meta name="description" content="Our first page">
-    <meta name="keywords" content="html tutorial template">
-  </head>
-  <body>
-    <h1 style ="color: red;">
-      Hola les saluda {{ profesor }} 
-    </h1>
+{% extends "base.html" %}
+
+{% block titulo %}
+Lista de estudiantes
+{% endblock titulo %}
+
+{% block contenido %}    
 
     <h3> Alumnos inscriptos </h3>
 <ul>
@@ -23,5 +19,5 @@
   </li> 
 {% endfor %}  
 </ul>
-  </body>
-</html>
+
+{% endblock contenido %}
