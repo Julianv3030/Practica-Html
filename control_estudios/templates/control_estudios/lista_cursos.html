@@ -4,15 +4,13 @@
 Lista de cursos
 {% endblock titulo %}
 
-{% block contenido %}    
-    <h3> Cursos </h3>
+{% block contenido %}
+<h3>Cursos:</h3>
 <ul>
-{% for curso in cursos %}
+  {% for curso in cursos %}
   <li>
-    {{ curso.nombre }}, {{ curso.comision }}
-    
-  </li> 
-{% endfor %}  
+    {{ curso.nombre}}, {{ curso.comision}}
+  </li>
+  {% endfor %}
 </ul>
->
 {% endblock contenido %}

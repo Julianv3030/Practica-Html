@@ -55,7 +55,9 @@ ROOT_URLCONF = "sistema_coder.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "sistema_coder/templates"],  # Agregar esta línea
+        "DIRS": [
+            BASE_DIR / "templates_base/",
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -68,7 +70,6 @@ TEMPLATES = [
     },
 ]
 
-
 WSGI_APPLICATION = "sistema_coder.wsgi.application"
 
 
@@ -78,7 +79,7 @@ WSGI_APPLICATION = "sistema_coder.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3", 
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
@@ -105,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "es-AR"
 
 TIME_ZONE = "UTC"
 
@@ -122,7 +123,6 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

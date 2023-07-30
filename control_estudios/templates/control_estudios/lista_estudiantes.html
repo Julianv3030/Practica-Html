@@ -4,20 +4,22 @@
 Lista de estudiantes
 {% endblock titulo %}
 
-{% block contenido %}    
+{% block contenido %}
+<h1>
+  Bienvenidos, les saluda {{ profesor }}
+</h1>
 
-    <h3> Alumnos inscriptos </h3>
+<h3>Alumnos inscritos:</h3>
 <ul>
 {% for estudiante in estudiantes %}
   <li>
-    {{ estudiante.apellido }}, {{ estudiante.nombre }}
+    {{ estudiante.apellido}}, {{ estudiante.nombre}}
     {% if estudiante.nota >= 5 %}
-    APROBADO
+      APROBADO
     {% else %}
-    REPROBADO 
+      REPROBADO
     {% endif %}
-  </li> 
-{% endfor %}  
+  </li>
+{% endfor %}
 </ul>
-
 {% endblock contenido %}

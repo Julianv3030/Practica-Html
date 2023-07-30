@@ -16,11 +16,12 @@ def saludar_con_fecha(request):
     respuesta_http = HttpResponse(saludo)
     return respuesta_http
 
+
 def inicio(request):
     contexto = {}
     http_response = render(
         request=request,
-        template_name='base.html',
+        template_name='inicio.html',
         context=contexto,
     )
     return http_response
