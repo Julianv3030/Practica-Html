@@ -56,7 +56,7 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            BASE_DIR / "templates_base/",
+            BASE_DIR / "templates_base/", r"C:\Users\julia\Documents\Coder Python 55350\Visual  Studio\clase 20\Practica-Html\sistema_coder\templates"
         ],
         "APP_DIRS": True,
         "OPTIONS": {
